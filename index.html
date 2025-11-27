@@ -132,4 +132,118 @@
   <p>Hi! 👋 How can we help you today?</p>
   <button id="whatsapp-close">✕</button>
 </div>
+  <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azhagar Consultancy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #004aad;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 50px;
+            vertical-align: middle;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0066cc;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #004aad;
+        }
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #004aad;
+            color: #fff;
+        }
+        /* WhatsApp Popup and Floating Button (already implemented) */
+    </style>
+</head>
+<body>
+
+```
+<!-- Header with Logo -->
+<header>
+    <img src="logo.png" alt="Azhagar Consultancy Logo">
+    <h1>Azhagar Consultancy</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <h2>Welcome to Azhagar Consultancy</h2>
+    <p>We provide expert guidance in business registration, GST, income tax, and compliance services for startups and enterprises in India.</p>
+    <p>Start your business journey with confidence and professional support.</p>
+</main>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 Azhagar Consultancy. All Rights Reserved.
+</footer>
+
+<!-- WhatsApp Button & Popup -->
+<a href="https://wa.me/917502602560?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Azhagar%20Consultancy" class="whatsapp_float" target="_blank" rel="noopener">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" class="whatsapp_icon">
+</a>
+<div id="whatsapp-popup">
+    <p>Hi! 👋 How can we help you today?</p>
+    <button id="whatsapp-close">✕</button>
+</div>
+
+<!-- JS for WhatsApp Popup -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const popup = document.getElementById("whatsapp-popup");
+        const closeBtn = document.getElementById("whatsapp-close");
+        const whatsappBtn = document.querySelector(".whatsapp_float");
+
+        setTimeout(() => {
+            if (window.innerWidth <= 1024) {
+                popup.style.display = "block";
+            }
+        }, 2000);
+
+        closeBtn.addEventListener("click", () => { popup.style.display = "none"; });
+        whatsappBtn.addEventListener("click", () => { popup.style.display = "none"; });
+        window.addEventListener("scroll", () => { popup.style.display = "none"; });
+    });
+</script>
+```
+
+</body>
+</html>
+
 </html>
