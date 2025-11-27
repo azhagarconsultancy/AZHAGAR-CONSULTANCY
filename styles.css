@@ -85,3 +85,31 @@ copyright{display:block;text-align:center;margin-top:14px}
     width: 35px;
     height: 35px;
 }
+/* WhatsApp Popup */
+#whatsapp-popup {
+    position: fixed;
+    bottom: 90px; /* above floating button */
+    right: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    padding: 15px 20px;
+    max-width: 250px;
+    display: none; /* hidden by default */
+    font-family: Arial, sans-serif;
+    color: #333;
+    z-index: 9999;
+}
+
+#whatsapp-popup p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#whatsapp-close {
+    background: none;
+    border: none;
+    font-size: 16px;
+    float: right;
+    cursor: pointer;
+}
