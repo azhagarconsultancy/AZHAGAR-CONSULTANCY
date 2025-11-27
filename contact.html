@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Azhagar Consultancy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Azhagar Consultancy" class="logo">
+        <h1>Azhagar Consultancy</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container" style="padding-bottom:60px">
+    <h2>Contact Us</h2>
+    <p>Fill the form or use the contact details below.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px">
+      <div>
+        <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you — we will reach out shortly!');">
+          <label for="name">Name</label><br/>
+          <input id="name" name="name" required style="width:100%;padding:10px;border-radius:6px;margin-bottom:8px"/><br/>
+          <label for="email">Email</label><br/>
+          <input id="email" name="email" type="email" required style="width:100%;padding:10px;border-radius:6px;margin-bottom:8px"/><br/>
+          <label for="message">Message</label><br/>
+          <textarea id="message" name="message" rows="6" style="width:100%;padding:10px;border-radius:6px;margin-bottom:8px"></textarea><br/>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+      <aside style="background:rgba(255,255,255,0.02);padding:18px;border-radius:8px">
+        <h4>Contact Details</h4>
+        <p>Email: hello@azhagarconsultancy.com</p>
+        <p>Phone: +91-7502602560</p>
+        <p>Address: Your City, India</p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer container">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div>© 2025 Azhagar Consultancy</div>
+      <div><a href="index.html" class="btn">Back to Home</a></div>
+    </div>
+  </footer>
+</body>
+</html>
